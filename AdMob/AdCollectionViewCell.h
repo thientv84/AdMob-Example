@@ -10,4 +10,6 @@
 
 @interface AdCollectionViewCell : UICollectionViewCell
 
+- (void)setUpAd;
+
 @end

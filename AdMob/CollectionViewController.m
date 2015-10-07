@@ -40,6 +40,7 @@ static NSString *AdCellIdentifier = @"AdCell";
     if (indexPath.row % 10 == 0) {
         AdCollectionViewCell *cell = (AdCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:AdCellIdentifier forIndexPath:indexPath];
         collectionViewCell = cell;
+        [cell setUpAd];
     }
     else {
         CollectionViewCell *cell = (CollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
