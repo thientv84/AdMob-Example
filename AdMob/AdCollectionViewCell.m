@@ -31,14 +31,7 @@
 - (void)prepareViews
 {
     [self.bannerView removeFromSuperview];
-    dispatch_async(dispatch_get_main_queue(), ^{
-        CGRect frame = self.contentView.bounds;
-        GADSearchBannerView *bannerView = [[GADSearchBannerView alloc] initWithAdSize:GADAdSizeFromCGSize(frame.size)];
-        bannerView.rootViewController = AppDelegate.appDelegate.window.rootViewController;
-        bannerView.adUnitID = @"ca-app-pub-3940256099942544/6300978111";
-        bannerView.delegate = self;
-        self.bannerView = bannerView;
-    });
+    self.bannerView = [self createBannerView];
     self.bannerView.hidden = NO;
     [self.contentView addSubview:self.bannerView];
 
@@ -57,6 +50,17 @@
 {
     GADRequest *request = [self buildRequest];
     [self.bannerView loadRequest:request];
+}
+
+- (GADSearchBannerView *)createBannerView
+{
+    CGRect frame = self.contentView.bounds;
+    GADSearchBannerView *banner = [[GADSearchBannerView alloc] initWithAdSize:GADAdSizeFromCGSize(frame.size)];
+    banner.rootViewController = AppDelegate.appDelegate.window.rootViewController;
+    banner.adUnitID = @"ca-app-pub-3940256099942544/6300978111";
+    banner.delegate = self;
+
+    return banner;
 }
 
 #pragma mark - GADBannerViewDelegate
