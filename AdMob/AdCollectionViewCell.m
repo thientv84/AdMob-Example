@@ -24,8 +24,10 @@
 
 - (void)setUpAd
 {
-    [self prepareViews];
-    [self loadRequest];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self prepareViews];
+        [self loadRequest];
+    });
 }
 
 - (void)prepareViews
