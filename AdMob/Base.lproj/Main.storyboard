@@ -45,6 +45,31 @@
                                     <outlet property="textLabel" destination="cqY-mB-hP3" id="xTR-wy-V88"/>
                                 </connections>
                             </collectionViewCell>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AdCell" id="XlA-il-J5u" customClass="CollectionViewCell">
+                                <rect key="frame" x="140" y="134" width="320" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWU-RY-GCT">
+                                            <rect key="frame" x="150" y="19" width="21" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" red="0.94901961089999998" green="0.94901961089999998" blue="0.94901961089999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="IWU-RY-GCT" firstAttribute="centerX" secondItem="XlA-il-J5u" secondAttribute="centerX" id="V72-Fc-Zfw"/>
+                                    <constraint firstItem="IWU-RY-GCT" firstAttribute="centerY" secondItem="XlA-il-J5u" secondAttribute="centerY" id="ek3-hV-3VI"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="textLabel" destination="IWU-RY-GCT" id="5Q7-Co-BAr"/>
+                                </connections>
+                            </collectionViewCell>
                         </cells>
                         <connections>
                             <outlet property="dataSource" destination="BSH-dA-0zU" id="aWV-3Z-4Te"/>

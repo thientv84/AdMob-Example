@@ -6,10 +6,12 @@
 //  Copyright © 2015 eBay Kleinanzeigen. All rights reserved.
 //
 
+#import "AdCollectionViewCell.h"
 #import "CollectionViewCell.h"
 #import "CollectionViewController.h"
 
 static NSString *CellIdentifier = @"Cell";
+static NSString *AdCellIdentifier = @"AdCell";
 
 @interface CollectionViewController ()
 
@@ -34,9 +36,17 @@ static NSString *CellIdentifier = @"Cell";
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    CollectionViewCell *cell = (CollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
-    cell.text = [NSString stringWithFormat:@"cell %zd", indexPath.row];
-    return cell;
+    UICollectionViewCell *collectionViewCell;
+    if (indexPath.row % 10 == 0) {
+        AdCollectionViewCell *cell = (AdCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:AdCellIdentifier forIndexPath:indexPath];
+        collectionViewCell = cell;
+    }
+    else {
+        CollectionViewCell *cell = (CollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
+        cell.text = [NSString stringWithFormat:@"cell %zd", indexPath.row];
+        collectionViewCell = cell;
+    }
+    return collectionViewCell;
 }
 
 @end

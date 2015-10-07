@@ -14,6 +14,7 @@
 		67FFD1741BC4E01A00AC141D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67FFD1721BC4E01A00AC141D /* LaunchScreen.storyboard */; };
 		67FFD17D1BC4E11C00AC141D /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67FFD17C1BC4E11C00AC141D /* CollectionViewController.m */; settings = {ASSET_TAGS = (); }; };
 		67FFD1801BC4E42E00AC141D /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67FFD17F1BC4E42E00AC141D /* CollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		67FFD1831BC4E68200AC141D /* AdCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67FFD1821BC4E68200AC141D /* AdCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		67FFD17C1BC4E11C00AC141D /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		67FFD17E1BC4E42E00AC141D /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		67FFD17F1BC4E42E00AC141D /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		67FFD1811BC4E68200AC141D /* AdCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdCollectionViewCell.h; sourceTree = "<group>"; };
+		67FFD1821BC4E68200AC141D /* AdCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdCollectionViewCell.m; sourceTree = "<group>"; };
 		7363443C843FA66ADA8C47E0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF3E8881490DDF0FF936F95B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D0EBEDB1FD28359058688521 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -74,6 +77,8 @@
 		67FFD1631BC4E01A00AC141D /* AdMob */ = {
 			isa = PBXGroup;
 			children = (
+				67FFD1811BC4E68200AC141D /* AdCollectionViewCell.h */,
+				67FFD1821BC4E68200AC141D /* AdCollectionViewCell.m */,
 				67FFD1671BC4E01A00AC141D /* AppDelegate.h */,
 				67FFD1681BC4E01A00AC141D /* AppDelegate.m */,
 				67FFD17E1BC4E42E00AC141D /* CollectionViewCell.h */,
@@ -227,6 +232,7 @@
 			files = (
 				67FFD17D1BC4E11C00AC141D /* CollectionViewController.m in Sources */,
 				67FFD1691BC4E01A00AC141D /* AppDelegate.m in Sources */,
+				67FFD1831BC4E68200AC141D /* AdCollectionViewCell.m in Sources */,
 				67FFD1801BC4E42E00AC141D /* CollectionViewCell.m in Sources */,
 				67FFD1661BC4E01A00AC141D /* main.m in Sources */,
 			);
